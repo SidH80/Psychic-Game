@@ -25,8 +25,6 @@ document.onkeyup = function(event) {
 	guessUser.push(guessesSoFar);
 };
 
-init();
-
 // Display the user and computer guesses, and wins/losses/ties.
 winsText.textContent = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
