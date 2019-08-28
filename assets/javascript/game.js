@@ -8,7 +8,34 @@ var losses = 0;
 var guessesLeft = 9;
 var computerGuess;
 var guessesSoFar = [];
-var computerChoices = ["q", "a", "z", "p", "l", "m", "t", "g", "v"];
+var computerChoices = [
+	"q",
+	"e",
+	"r",
+	"t",
+	"y",
+	"u",
+	"i",
+	"o",
+	"p",
+	"a",
+	"s",
+	"d",
+	"f",
+	"g",
+	"h",
+	"j",
+	"k",
+	"l",
+	"z",
+	"x",
+	"c",
+	"v",
+	"b",
+	"n",
+	"m",
+	"w",
+];
 var displayText = "this is a test";
 
 //Create function to display th results to page
