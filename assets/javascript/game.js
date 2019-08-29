@@ -1,5 +1,3 @@
-console.log("hooked up");
-
 //Create variables to store my values
 var userGuess;
 
@@ -53,6 +51,7 @@ function computerRandomLetter() {
 	computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 
+//running function chooses a random letter before start up
 computerRandomLetter();
 console.log(computerGuess);
 
@@ -87,7 +86,7 @@ document.onkeyup = function(event) {
 		losses++;
 		resetScores();
 	}
-
+	// generates another random letter during the round and updates the display
 	computerRandomLetter();
 	console.log(computerGuess);
 	updateDisplay();
