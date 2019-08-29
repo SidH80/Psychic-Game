@@ -32,7 +32,7 @@ var computerChoices = [
 	"w",
 	"x",
 	"y",
-	"z",
+	"z"
 ];
 
 var displayText = "Guess the computer's letter";
@@ -45,6 +45,8 @@ function updateDisplay() {
 	document.querySelector("#guessesLeft").innerHTML = guessesLeft;
 	document.querySelector("#guessesSoFar").innerHTML = guessesSoFar;
 }
+//shows headings and titles when the game begins
+updateDisplay();
 
 //Create a function to get a random letter for the computer
 function computerRandomLetter() {
@@ -61,7 +63,7 @@ function resetScores() {
 	guessesSoFar = [];
 }
 
-//create start onkey event function to grab userGuess
+//create start on key event function to grab userGuess
 document.onkeyup = function(event) {
 	userGuess = event.key;
 	console.log(userGuess);
@@ -74,7 +76,7 @@ document.onkeyup = function(event) {
 		displayText = "You got it!!!";
 		wins++;
 
-		// if my guess does not equal computer guess then decrease losses by 1 and push userGuess to guesseSoFar array and have computer guess again
+		// if my guess does not equal computer guess then decrease losses by 1 and push userGuess to guessesSoFar array and have computer guess again
 	} else {
 		guessesSoFar.push(userGuess);
 		guessesLeft--;
@@ -82,7 +84,7 @@ document.onkeyup = function(event) {
 	//after 9 guesses display "play again?", increase losses by 1, reset scores
 	if (guessesLeft === 0) {
 		console.log("try again");
-		displayText = "You loose. Another round?";
+		displayText = "Game Over. Another round?";
 		losses++;
 		resetScores();
 	}
