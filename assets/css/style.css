@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+	background-color: blue;
+	color: white;
+	font-family: 'Indie Flower', cursive, Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+.container {
+	padding: 100px;
+
